@@ -1,0 +1,19 @@
+/*
+    VHMScript 어휘 분석(Lexical Analysis) 설명 파일
+    VLX: Vhm LeXical analysis description file
+
+    Copyright (C) 2014-PRESENT AhnOS Development Team. All rights reserved.
+*/
+
+enum token_type {
+    TOKEN_UNKNOWN,
+    TOKEN_KEYWORD,
+    TOKEN_INTERNAL_VARIABLE,
+    TOKEN_NUMBER,
+    TOKEN_CHAR,
+    TOKEN_STRING,
+    TOKEN_ESCAPE,
+    TOKEN_GENERAL_NAME
+};
+
+string delimiters = " []\t\r\n
